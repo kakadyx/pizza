@@ -11,6 +11,7 @@ import { Routing } from '@/pages'
 <style lang="scss">
 @import '@/app/style/reset.scss';
 @import '@/app/style/variables.scss';
+@import '@/app/style/main.scss';
 .app {
   min-height: 100vh;
   font-family: sans-serif;
