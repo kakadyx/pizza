@@ -20,11 +20,12 @@
 
 <style lang="scss" scoped>
 .footer {
-  padding-block: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 10px;
 }
 
 .content {

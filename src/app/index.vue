@@ -14,11 +14,12 @@ import { Routing } from '@/pages'
 @import '@/app/style/main.scss';
 .app {
   min-height: 100vh;
+  max-height: 100vh;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
   & > * {
-    padding-inline: var(--side-offset);
+    margin-inline: var(--side-offset);
   }
 }
 </style>

@@ -18,7 +18,10 @@
 
 <style lang="scss" scoped>
 .header {
-  padding-block: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .content {
