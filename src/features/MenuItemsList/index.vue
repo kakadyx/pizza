@@ -2,6 +2,7 @@
 import { MenuItem } from '@/entities'
 import type { MenuItemsListProps } from './types'
 const props = withDefaults(defineProps<MenuItemsListProps>(), {
+  title: 'Default title',
   items: () => [
     {
       price: 'null',
@@ -39,8 +40,7 @@ const props = withDefaults(defineProps<MenuItemsListProps>(), {
       ingredients: 'null',
       image: null
     }
-  ],
-  title: 'Default title'
+  ]
 })
 </script>
 <template>
@@ -48,7 +48,7 @@ const props = withDefaults(defineProps<MenuItemsListProps>(), {
     <h4 class="submenu-header">{{ props.title }}</h4>
     <div class="items-wrap">
       <MenuItem
-        v-for="(item, i) in items"
+        v-for="(item, i) in props.items"
         :key="i"
         :image="item.image"
         :ingredients="item.ingredients"

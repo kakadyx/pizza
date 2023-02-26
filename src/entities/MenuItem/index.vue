@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import type { Props } from './types'
+import type { MenuItemProps } from './types'
 
-const props = withDefaults(defineProps<Props>(), {
+const props = withDefaults(defineProps<MenuItemProps>(), {
   name: 'Food Name',
   ingredients: 'Pepperoni, tomatoes, cheese, cheese, cheese something else...',
   price: '10.59$',

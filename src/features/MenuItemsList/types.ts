@@ -1,4 +1,4 @@
-import type { Props as MenuItemProps } from '@/entities/MenuItem'
+import type { MenuItemProps } from '@/entities/MenuItem'
 
 export type MenuItemsListProps = {
   title: undefined | string
