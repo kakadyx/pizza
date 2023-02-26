@@ -1,10 +1,20 @@
 <script lang="ts" setup>
 import { MenuItemsList } from '@/features'
+import { pizzas, beer } from './consts.js'
 </script>
+
 <template>
-  <div>
-    <MenuItemsList />
+  <div class="menu-wrap">
+    <MenuItemsList title="Pizza" :items="pizzas" />
+    <MenuItemsList title="Beer" :items="beer" />
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.menu-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+</style>

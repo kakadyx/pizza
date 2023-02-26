@@ -1,8 +1,10 @@
-<script setup></script>
+<script setup lang="ts">
+import { Menu } from '@/widgets'
+</script>
 
 <template>
   <div class="content">
-    <div class="filler"></div>
+    <Menu />
   </div>
 </template>
 
@@ -11,9 +13,6 @@
   display: flex;
   flex: 1;
   overflow: auto;
-  .filler {
-    height: 9999px;
-  }
 
   &::-webkit-scrollbar {
     width: 4px;

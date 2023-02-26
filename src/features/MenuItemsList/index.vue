@@ -5,9 +5,15 @@ const props = withDefaults(defineProps<MenuItemsListProps>(), {
   title: 'Default title',
   items: () => [
     {
-      price: 'null',
-      name: 'null',
-      ingredients: 'null',
+      price: 'price',
+      name: 'name',
+      ingredients: 'ingredients',
+      image: null
+    },
+    {
+      price: 'price',
+      name: 'name',
+      ingredients: 'ingredients',
       image: null
     },
     {
@@ -17,46 +23,55 @@ const props = withDefaults(defineProps<MenuItemsListProps>(), {
       image: null
     },
     {
-      price: 'null',
-      name: 'null',
-      ingredients: 'null',
+      price: 'price',
+      name: 'name',
+      ingredients: 'ingredients',
       image: null
     },
     {
-      price: 'null',
-      name: 'null',
-      ingredients: 'null',
+      price: 'price',
+      name: 'name',
+      ingredients: 'ingredients',
       image: null
     },
     {
-      price: 'null',
-      name: 'null',
-      ingredients: 'null',
-      image: null
-    },
-    {
-      price: 'null',
-      name: 'null',
-      ingredients: 'null',
+      price: 'price',
+      name: 'name',
+      ingredients: 'ingredients',
       image: null
     }
   ]
 })
 </script>
 <template>
-  <div>
+  <div class="item-list">
     <h4 class="submenu-header">{{ props.title }}</h4>
     <div class="items-wrap">
       <MenuItem
         v-for="(item, i) in props.items"
         :key="i"
         :image="item.image"
-        :ingredients="item.ingredients"
-        :name="item.name"
-        :price="item.price"
+        :ingredients="item.ingredients + i"
+        :name="item.name + ' ' + i"
+        :price="item.price + i"
       />
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style lang="scss" scoped>
+.item-list {
+  display: flex;
+  gap: 20px;
+}
+.items-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.submenu-header {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+</style>

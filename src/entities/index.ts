@@ -1,3 +1,3 @@
 import MenuItem from './MenuItem'
-import type { Props } from './MenuItem'
-export { MenuItem, Props }
+import type { MenuItemProps } from './MenuItem'
+export { MenuItem, MenuItemProps }
