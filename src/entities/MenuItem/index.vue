@@ -10,25 +10,18 @@ const props = withDefaults(defineProps<MenuItemProps>(), {
 </script>
 
 <template>
-  <div class="card-wrap">
-    <div class="card">
-      <img v-if="props.image" :src="props.image" alt="food" />
-      <div v-else class="image">{{ props.name.split(' ').at(-1) }}</div>
-      <div class="description">
-        <p class="name">{{ props.name }}</p>
-        <p class="ingredients">{{ props.ingredients }}</p>
-        <p class="price">{{ props.price }}</p>
-      </div>
+  <div class="card">
+    <img v-if="props.image" :src="props.image" alt="food" />
+    <div v-else class="image">{{ props.name.split(' ').at(-1) }}</div>
+    <div class="description">
+      <p class="name">{{ props.name }}</p>
+      <p class="ingredients">{{ props.ingredients }}</p>
+      <p class="price">{{ props.price }}</p>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.card-wrap {
-  flex-basis: 32%;
-  display: flex;
-  justify-content: center;
-}
 .card {
   display: flex;
   flex-direction: column;
