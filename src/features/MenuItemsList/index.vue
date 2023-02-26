@@ -69,7 +69,6 @@ const props = withDefaults(defineProps<MenuItemsListProps>(), {
   display: grid;
   grid-template-columns: repeat(auto-fill, 250px);
   gap: 10px;
-  justify-content: space-between;
 }
 .submenu-header {
   font-size: 35px;
