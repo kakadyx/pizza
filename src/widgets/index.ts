@@ -1,4 +1,4 @@
-import TheHeader from '@/widgets/theHeader/index'
-import TheFooter from '@/widgets/theFooter/index'
-
-export { TheHeader, TheFooter }
+import TheHeader from '@/widgets/TheHeader'
+import TheFooter from '@/widgets/TheFooter'
+import Menu from '@/widgets/Menu'
+export { TheHeader, TheFooter, Menu }
