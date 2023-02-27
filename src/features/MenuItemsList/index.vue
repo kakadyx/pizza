@@ -66,9 +66,10 @@ const props = withDefaults(defineProps<MenuItemsListProps>(), {
 }
 .items-wrap {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 250px);
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 .submenu-header {
   font-size: 35px;
